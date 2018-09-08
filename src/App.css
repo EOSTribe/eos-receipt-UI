@@ -1,113 +1,77 @@
-.email-receipt-email-receipt-1 {
+.container-container-1 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    background: #45332A;
+    background: rgb(38, 38, 38);
     min-height: 100vh;
 }
 
-.email-receipt-0 {
+.container-0 {
     width: 0px;
     flex-shrink: 0;
-    flex-grow: 0;
+    flex-grow: 0.05506607929515418;
     flex-basis: 0px;
 }
 
-.email-receipt-1 {
+.container-1 {
     display: flex;
     flex-shrink: 0;
-    flex-grow: 1;
+    flex-grow: 0.7522026431718062;
     flex-basis: 0px;
     min-height: fit-content;
 }
 
-.email-receipt-1-0 {
-    height: 0px;
-    flex-grow: 0;
-    flex-basis: 0px;
-}
-
-.email-receipt-path-1 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 0px;
-    min-height: fit-content;
-    background: rgb(38, 38, 38);
-}
-
-.email-receipt-1-1-0 {
-    width: 0px;
-    flex-shrink: 0;
-    flex-grow: 0.08333333333333333;
-    flex-basis: 0px;
-}
-
-.email-receipt-1-1-1 {
-    display: flex;
-    flex-shrink: 0;
-    flex-grow: 0.8333333333333334;
-    flex-basis: 0px;
-    min-height: fit-content;
-}
-
-.email-receipt-1-1-1-0 {
+.container-1-0 {
     height: 0px;
     flex-grow: 0.125;
     flex-basis: 0px;
 }
 
-.email-receipt-body-8 {
+.container-body-1 {
     display: flex;
     flex-direction: column;
     flex-grow: 0.75;
     flex-basis: 0px;
     min-height: fit-content;
-    padding-top: 56px;
+    padding-top: 41px;
     box-shadow: 0px 30px 40px 0px rgba(0,0,0,0.35);
     background: rgb(255, 255, 255);
 }
 
-.email-receipt-1-1-1-1-0 {
+.container-1-1-0 {
     display: flex;
     flex-shrink: 0;
+    justify-content: center;
 }
 
-.email-receipt-1-1-1-1-0-0 {
-    height: 0px;
-    flex-grow: 0.44333333333333336;
-    flex-basis: 0px;
+.container-1-1-0-0 {
+    flex-shrink: 0;
+    display: flex;
 }
 
-.email-receipt-logo-6 {
-    height: 68px;
-    flex-grow: 0.11333333333333333;
-    flex-basis: 0px;
+.container-logo-7 {
+    width: 86px;
+    height: 86px;
     background-image: url('https://ucarecdn.com/361b5b71-ffaa-4b5b-a55d-c6c0065e4e20/');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    flex-grow: 1;
 }
 
-.email-receipt-1-1-1-1-0-2 {
-    height: 0px;
-    flex-grow: 0.44333333333333336;
-    flex-basis: 0px;
-}
-
-.email-receipt-1-1-1-1-1 {
+.container-1-1-1 {
     display: flex;
     flex-shrink: 0;
-    margin-top: 19px;
+    margin-top: 16px;
 }
 
-.email-receipt-1-1-1-1-1-0 {
+.container-1-1-1-0 {
     height: 0px;
     flex-grow: 0.4988662131519274;
     flex-basis: 0px;
 }
 
-.email-receipt-logo-text-0 {
+.container-logo-text-1 {
     width: 159px;
     flex-shrink: 0;
     font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
@@ -122,25 +86,25 @@
     word-wrap: break-word;
 }
 
-.email-receipt-1-1-1-1-1-2 {
+.container-1-1-1-2 {
     height: 0px;
     flex-grow: 0.5011337868480725;
     flex-basis: 0px;
 }
 
-.email-receipt-1-1-1-1-2 {
+.container-1-1-2 {
     display: flex;
     flex-shrink: 0;
     margin-top: 33px;
 }
 
-.email-receipt-1-1-1-1-2-0 {
+.container-1-1-2-0 {
     height: 0px;
     flex-grow: 0.09833333333333333;
     flex-basis: 0px;
 }
 
-.email-receipt-content-8 {
+.container-content-8 {
     flex-grow: 0.8016666666666666;
     flex-basis: 0px;
     font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
@@ -155,30 +119,30 @@
     word-wrap: break-word;
 }
 
-.email-receipt-1-1-1-1-2-2 {
+.container-1-1-2-2 {
     height: 0px;
     flex-grow: 0.1;
     flex-basis: 0px;
 }
 
-.email-receipt-1-1-1-1-3 {
+.container-1-1-3 {
     display: flex;
     flex-shrink: 0;
-    margin-top: 42px;
+    margin-top: 52px;
 }
 
-.email-receipt-1-1-1-1-3-0 {
+.container-1-1-3-0 {
     height: 0px;
     flex-grow: 0.09666666666666666;
     flex-basis: 0px;
 }
 
-.email-receipt-1-1-1-1-3-1 {
+.container-1-1-3-1 {
     flex-grow: 0.805;
     flex-basis: 0px;
 }
 
-.email-receipt-search-field-5 {
+.container-search-field-4 {
     height: 65px;
     cursor: default;
     background: #FFFFFF;
@@ -196,25 +160,25 @@
     border: 2px solid #cccccc;
 }
 
-.email-receipt-1-1-1-1-3-2 {
+.container-1-1-3-2 {
     height: 0px;
     flex-grow: 0.09833333333333333;
     flex-basis: 0px;
 }
 
-.email-receipt-1-1-1-1-4 {
+.container-1-1-4 {
     display: flex;
     flex-shrink: 0;
     margin-top: 24px;
 }
 
-.email-receipt-1-1-1-1-4-0 {
+.container-1-1-4-0 {
     height: 0px;
     flex-grow: 0.33;
     flex-basis: 0px;
 }
 
-.email-receipt-search-button-8 {
+.container-search-button-1 {
     display: flex;
     flex-direction: column;
     flex-grow: 0.3383333333333333;
@@ -227,13 +191,13 @@
     border: 3px solid rgb(65, 183, 132);
 }
 
-.email-receipt-1-1-1-1-4-1-0 {
+.container-1-1-4-1-0 {
     display: flex;
     flex-shrink: 0;
     justify-content: center;
 }
 
-.email-receipt-search-button-text-4 {
+.container-search-button-text-8 {
     width: 75px;
     flex-shrink: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -248,39 +212,208 @@
     word-wrap: break-word;
 }
 
-.email-receipt-1-1-1-1-4-2 {
+.container-1-1-4-2 {
     height: 0px;
     flex-grow: 0.33166666666666667;
     flex-basis: 0px;
 }
 
-.email-receipt-1-1-1-1-5 {
+.container-1-1-5 {
     width: 0px;
     flex-shrink: 0;
     flex-grow: 1;
     flex-basis: 0px;
 }
 
-.email-receipt-1-1-1-2 {
+.container-1-2 {
     height: 0px;
     flex-grow: 0.125;
     flex-basis: 0px;
 }
 
-.email-receipt-1-1-2 {
+.container-2 {
     width: 0px;
     flex-shrink: 0;
-    flex-grow: 0.08333333333333333;
+    flex-grow: 0.011013215859030838;
     flex-basis: 0px;
 }
 
-.email-receipt-1-2 {
+.container-3 {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0.17841409691629956;
+    flex-basis: 0px;
+    min-height: fit-content;
+}
+
+.container-3-0 {
+    height: 0px;
+    flex-grow: 0.125;
+    flex-basis: 0px;
+}
+
+.container-sponsors-8 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.74875;
+    flex-basis: 0px;
+    min-height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    background: rgba(216, 216, 216, 0);
+}
+
+.container-3-1-0 {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 0px;
+    min-height: fit-content;
+}
+
+.container-3-1-0-0 {
+    height: 0px;
+    flex-grow: 0.045075125208681135;
+    flex-basis: 0px;
+}
+
+.container-3-1-0-1 {
+    flex-grow: 0.24207011686143573;
+    flex-basis: 0px;
+    display: flex;
+}
+
+.container-uw-l-4 {
+    background-image: url('https://ucarecdn.com/0ef4c3db-cda0-4620-a77a-10894c1f7b43/');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 145px;
+    flex-grow: 1;
+}
+
+.container-3-1-0-2 {
+    height: 0px;
+    flex-grow: 0.08347245409015025;
+    flex-basis: 0px;
+}
+
+.container-3-1-0-3 {
+    flex-grow: 0.24207011686143573;
+    flex-basis: 0px;
+    display: flex;
+}
+
+.container-eos-nation-logo-5 {
+    background-image: url('https://ucarecdn.com/752ce992-1417-4e81-a289-dbfbe277a505/');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 145px;
+    flex-grow: 1;
+}
+
+.container-3-1-0-4 {
+    height: 0px;
+    flex-grow: 0.11018363939899833;
+    flex-basis: 0px;
+}
+
+.container-3-1-0-5 {
+    flex-grow: 0.24207011686143573;
+    flex-basis: 0px;
+    display: flex;
+}
+
+.container-eos-tribe-logo-8 {
+    background-image: url('https://ucarecdn.com/45500910-f396-4eac-8e9b-f9b1fa26e320/');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 145px;
+    flex-grow: 1;
+}
+
+.container-3-1-0-6 {
+    height: 0px;
+    flex-grow: 0.035058430717863104;
+    flex-basis: 0px;
+}
+
+.container-3-2 {
+    height: 0px;
+    flex-grow: 0.12625;
+    flex-basis: 0px;
+}
+
+.container-4 {
+    width: 0px;
+    flex-shrink: 0;
+    flex-grow: 0.003303964757709251;
+    flex-basis: 0px;
+}
+
+.container-5 {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.container-5-0 {
     height: 0px;
     flex-grow: 0;
     flex-basis: 0px;
 }
 
-.email-receipt-2 {
+.container-footer-2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0px;
+    min-height: fit-content;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    background: rgba(216, 216, 216, 0);
+}
+
+.container-5-1-0 {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.container-5-1-0-0 {
+    height: 0px;
+    flex-grow: 0.125;
+    flex-basis: 0px;
+}
+
+.container-footer-text-3 {
+    flex-grow: 0.75;
+    flex-basis: 0px;
+    font-family: 'Andale Mono', AndaleMono, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.container-5-1-0-2 {
+    height: 0px;
+    flex-grow: 0.125;
+    flex-basis: 0px;
+}
+
+.container-5-2 {
+    height: 0px;
+    flex-grow: 0;
+    flex-basis: 0px;
+}
+
+.container-6 {
     width: 0px;
     flex-shrink: 0;
     flex-grow: 0;
