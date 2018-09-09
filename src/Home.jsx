@@ -3,6 +3,12 @@ import './Home.css';
 
 
 export default class Home extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      trx_id: "",
+    }
+  }
   render() {
     return (
       <div className="home-container-1">
@@ -30,13 +36,13 @@ export default class Home extends React.Component {
                   <div className="home-1-1-3">
                       <div className="home-1-1-3-0" />
                       <div className="home-1-1-3-1">
-                          <input type="text" placeholder="Search Tx ID..." className="home-search-field-4" />
+                          <input type="text" placeholder="Search Tx ID..." className="home-search-field-4" onChange={(e) => this.setState({trx_id: e.target.value})}/>
                       </div>
                       <div className="home-1-1-3-2" />
                   </div>
                   <div className="home-1-1-4">
                       <div className="home-1-1-4-0" />
-                      <div className="home-search-button-1">
+                      <div className="home-search-button-1" onClick={() => { console.log(this.props.history.push(`/transaction/${this.state.trx_id}`))} }>
                           <div className="home-1-1-4-1-0">
                               <div className="home-search-button-text-8">
                                   SEARCH
