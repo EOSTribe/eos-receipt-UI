@@ -44,14 +44,9 @@ export default class Home extends React.Component {
                   </div>
                   <div className="home-1-1-4">
                       <div className="home-1-1-4-0" />
-                      <div className="home-search-button-1"
-                        onClick={() => { if (this.state.trx_id) this.props.history.push(`/transaction/${this.state.trx_id}`) }}>
-                          <div className="home-1-1-4-1-0">
-                              <div className="home-search-button-text-8">
-                                  SEARCH
-                              </div>
-                          </div>
-                      </div>
+                      <a className="search-button"
+                        onClick={() => { if (this.state.trx_id) this.props.history.push(`/transaction/${this.state.trx_id}`) }}>SEARCH
+                      </a>
                       <div className="home-1-1-4-2" />
                   </div>
                   <div className="home-1-1-5" />

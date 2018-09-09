@@ -181,7 +181,7 @@
     flex-basis: 0px;
 }
 
-.home-search-button-1 {
+.search-button {
     display: flex;
     flex-direction: column;
     flex-grow: 0.3383333333333333;
@@ -192,6 +192,10 @@
     cursor: pointer;
     background: rgb(255, 255, 255);
     border: 3px solid rgb(65, 183, 132);
+    text-align: center;
+    color: rgb(65, 183, 132);
+    letter-spacing: 3px;
+    font-weight: bold;
 }
 
 .home-1-1-4-1-0 {
@@ -200,7 +204,7 @@
     justify-content: center;
 }
 
-.home-search-button-text-8 {
+.search-button {
     width: 75px;
     flex-shrink: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
