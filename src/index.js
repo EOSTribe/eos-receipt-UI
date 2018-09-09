@@ -10,6 +10,7 @@ const App = () => (
   <Router>
     <div>
       <Route exact path="/" component={Home} />
+      <Route path="/transaction" component={Home} />
       <Route path="/transaction/:trx_id" component={Receipt} />
     </div>
   </Router>
