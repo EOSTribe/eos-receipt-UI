@@ -1,8 +1,58 @@
 import React from 'react';
 import './Receipt.css';
+import eosReceipt, {getTransaction} from "eos-receipt";
 
+
+/**
+ * Parse Search
+ *
+ * @example
+ *
+ * parseSearch("?currency=CAD&foo=bar")
+ * //=> {currency: "CAD", foo: "bar"}
+ */
+function parseSearch(search) {
+    if (!search) return {};
+    search = search.replace(/^\?/, "")
+    const items = {};
+    for (const item of search.split("&")) {
+        const [key, value] = item.split("=")
+        items[key] = value;
+    }
+    return items;
+}
 
 export default class Receipt extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      from: "",
+      to: "",
+      currency: "USD",
+      value: "",
+      memo: "",
+      block_time: "",
+      date: "",
+      time: "",
+      trx_id: "",
+      purchase: "",
+    }
+  }
+  async setReceipt() {
+    // To-Do Get Memo & Purchase Type
+    const search = parseSearch(this.props.location.search);
+    const currency = search.currency || "USD";
+    const {trx_id} = this.props.match.params;
+    const receipt = await eosReceipt(trx_id, currency);
+    const [date, time] = receipt.block_time.split("T");
+    const value = receipt.value.toFixed(2);
+    const memo = search.memo || receipt.memo;
+    const purchase = search.purchase || "Services";
+    this.setState(Object.assign(receipt, {date, time, trx_id, value, memo, purchase}));
+  }
+  componentDidMount() {
+    this.setReceipt();
+  }
   render() {
     return (
       <div className="receipt-component-1">
@@ -18,7 +68,7 @@ export default class Receipt extends React.Component {
                           </div>
                           <div className="receipt-1-0-0-0-1">
                               <div className="receipt-payer-name-1">
-                                  eostribeprod
+                                  {this.state.from}
                               </div>
                           </div>
                       </div>
@@ -26,8 +76,8 @@ export default class Receipt extends React.Component {
                       <div className="receipt-1-0-0-2">
                           <div className="receipt-1-0-0-2-0">
                               <div className="receipt-timestamp-8">
-                                  <div>Sep-05-2018</div>
-                                  <div>{"10:55:06 AM"}</div>
+                                  <div>{this.state.date}</div>
+                                  <div>{this.state.time}</div>
                               </div>
                           </div>
                       </div>
@@ -44,7 +94,7 @@ export default class Receipt extends React.Component {
                   </div>
                   <div className="receipt-1-0-3">
                       <div className="receipt-note-body-text-8">
-                          {"Congratulations! You’ve just violated the constitution by sending money to another block producer. Prepare to get roasted on social media and fall out of the rankings."}
+                          {this.state.memo}
                       </div>
                   </div>
                   <div className="receipt-1-0-4">
@@ -70,7 +120,7 @@ export default class Receipt extends React.Component {
                           </div>
                           <div className="receipt-1-0-5-1-1">
                               <div className="receipt-eosnationftw-6">
-                                  eosnationftw
+                                  {this.state.to}
                               </div>
                           </div>
                       </div>
@@ -91,7 +141,7 @@ export default class Receipt extends React.Component {
                           </div>
                           <div className="receipt-1-0-5-3-1">
                               <div className="receipt-amount-total-9">
-                                  $1337.01
+                                  ${this.state.value}
                               </div>
                           </div>
                       </div>
@@ -112,7 +162,7 @@ export default class Receipt extends React.Component {
                           </div>
                           <div className="receipt-1-0-5-5-1">
                               <div className="receipt-purchase-type-5">
-                                  Services
+                                  {this.state.purchase}
                               </div>
                           </div>
                       </div>
@@ -126,7 +176,7 @@ export default class Receipt extends React.Component {
                       <div className="receipt-transaction-id-3">
                           <div>{"Transaction id:"}</div>
                           <br/>
-                          <div>9eca089b53133bf8dd3384178fb7e8abac956a4a8506b77987361c64c477ea54</div>
+                          <div>{this.state.trx_id}</div>
                       </div>
                   </div>
               </div>

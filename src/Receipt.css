@@ -18,6 +18,7 @@
     display: flex;
     flex-shrink: 0;
     justify-content: center;
+    margin-top: 25px;
 }
 
 .receipt-receipt-bg-1 {

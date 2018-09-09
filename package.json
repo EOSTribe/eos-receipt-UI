@@ -20,7 +20,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "eos-receipt": "1.x",
+    "eos-receipt": "*",
     "react": "16.x",
     "react-dom": "16.x",
     "react-router-dom": "*"
