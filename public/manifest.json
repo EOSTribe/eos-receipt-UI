@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "EOS Receipt",
+  "name": "EOS Receipt where you can generate receipts for your EOS based crypto purchases",
   "icons": [
     {
       "src": "favicon.ico",

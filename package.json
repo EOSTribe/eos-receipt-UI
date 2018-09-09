@@ -22,7 +22,8 @@
   "dependencies": {
     "eos-receipt": "1.x",
     "react": "16.x",
-    "react-dom": "16.x"
+    "react-dom": "16.x",
+    "react-router-dom": "*"
   },
   "devDependencies": {
     "react-scripts": "1.x"
