@@ -26,3 +26,8 @@ $ npm run build
 ```
 
 Host static files from `./build` folder.
+
+## Related
+
+- [eos-receipt](https://github.com/eos-nation/eos-receipt) Javascript Library API
+- [eos-receipt-UI](https://github.com/EOSTribe/eos-receipt-UI) React UI Front-end
