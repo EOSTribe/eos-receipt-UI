@@ -72,7 +72,9 @@ export default class Receipt extends React.Component {
                               </div>
                           </div>
                       </div>
-                      <div className="receipt-logo-1" />
+                      <div className="receipt-logo-1" onClick={() => {
+                          window.print()
+                        }} />
                       <div className="receipt-1-0-0-2">
                           <div className="receipt-1-0-0-2-0">
                               <div className="receipt-timestamp-8">

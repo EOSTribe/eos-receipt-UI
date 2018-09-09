@@ -88,6 +88,18 @@
     word-wrap: break-word;
 }
 
+.receipt-logo-1:hover {
+    width: 50px;
+    height: 57px;
+    flex-shrink: 0;
+    margin-left: 55px;
+    background-image: url('https://cdn.worldvectorlogo.com/logos/adobe-pdf-icon.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
 .receipt-logo-1 {
     width: 50px;
     height: 57px;
@@ -97,6 +109,9 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    -webkit-transition: background-image 0.2s;
+    transition: background-image 0.2s;
+    cursor: pointer;
 }
 
 .receipt-1-0-0-2 {
